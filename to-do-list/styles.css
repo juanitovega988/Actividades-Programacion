@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #5b8a96, #80b57e); /* Gradiente azul-verdoso de la imagen[span_2](start_span)[span_2](end_span) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.card {
+    background: #ffffff;
+    padding: 35px 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    width: 480px;
+    max-width: 90%;
+    margin-bottom: 60px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #1e293b;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+h1 i {
+    color: #1e293b;
+}
+
+.input-container {
+    display: flex;
+    background-color: #f1f3f5;
+    border-radius: 30px;
+    padding: 5px 5px 5px 20px;
+    margin-bottom: 25px;
+}
+
+input[type="text"] {
+    flex: 1;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 15px;
+    color: #495057;
+}
+
+input[type="text"]::placeholder {
+    color: #adb5bd;
+}
+
+button {
+    background-color: #f95738; /* Color naranja/rojo del botón[span_3](start_span)[span_3](end_span) */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #e04826;
+}
+
+#taskList {
+    list-style: none;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #f1f3f5;
+    font-size: 16px;
+    color: #333;
+}
+
+.task-item:last-child {
+    border-bottom: none;
+}
+
+.icon-check {
+    color: #2b8a3e;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.icon-smile {
+    color: #adb5bd;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.task-text {
+    flex: 1;
+}
+
+.delete-btn {
+    color: #495057;
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 0.2s;
+}
+
+.delete-btn:hover {
+    color: #fa5252;
+}
+
+/* Barra inferior blanca con tu nombre */
+.footer-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 12px 0;
+    font-weight: 600;
+    color: #1e293b;
+    font-size: 15px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+}

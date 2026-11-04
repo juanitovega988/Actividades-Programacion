@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App - Práctica de Laboratorio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Lista de Tareas <i class="fa-solid fa-clipboard-list"></i></h1>
+        
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Añade tu tarea aquí...">
+            <button id="addBtn">Añadir</button>
+        </div>
+
+        <ul id="taskList">
+            <li class="task-item">
+                <i class="fa-solid fa-circle-check icon-check"></i>
+                <span class="task-text">hola</span>
+                <i class="fa-solid fa-xmark delete-btn"></i>
+            </li>
+            <li class="task-item">
+                <i class="fa-regular fa-face-smile icon-smile"></i>
+                <span class="task-text">hola</span>
+                <i class="fa-solid fa-xmark delete-btn"></i>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Barra inferior con tu nombre -->
+    <div class="footer-bar">
+        <span>Juan Alexander Vega Gonzalez</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
